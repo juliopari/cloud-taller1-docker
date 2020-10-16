@@ -1,0 +1,47 @@
+#datapower 10
+
+#descargar la imagen
+docker pull ibmcom/datapower
+
+/*
+docker run -it \
+  -v $PWD/config:/drouter/config \
+  -v $PWD/local:/drouter/local \
+  -e DATAPOWER_ACCEPT_LICENSE=true \
+  -e DATAPOWER_INTERACTIVE=true \
+  -e DATAPOWER_WORKER_THREADS=4 \
+  -p 9090:9090 \
+  ibmcom/datapower
+*/
+
+#ejecutar con power shell
+#permitir accesos de docker shared
+
+/*
+Ubicarse en: C:\Program Files\Docker (if this folder is missing, then in the Docker settings switch to Windows containers and once Docker is restarted Switch back to Linux containers)
+
+mkdir local
+mkdir C:\Users\s35469\Docker\SharedDir
+
+*/
+
+/*
+docker run -it -v $PWD/config:/drouter/config -v $PWD/local:/drouter/local -e DATAPOWER_ACCEPT_LICENSE=true -e DATAPOWER_INTERACTIVE=true -e DATAPOWER_WORKER_THREADS=4 -p 9090:9090 -p 5000-5020:5000-5020 --name IdgDemo ibmcom/datapower
+*/
+
+/*
+login: admin
+password: admin
+*/
+
+/*
+co
+web-mgmt
+show
+admin-state enabled
+exit
+write mem
+y
+*/
+
+https://localhost:9090

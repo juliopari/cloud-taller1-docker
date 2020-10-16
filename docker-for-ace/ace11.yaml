@@ -1,0 +1,13 @@
+#ace 11
+docker run -e LICENSE=accept -P ibmcom/ace
+/*------------------------------------------------*/
+
+-Este contenedor escucha en el puerto 7600
+-Este contenedor escucha en el puerto 7600
+-Ahora revisar que puerto fue asignado con docker ps
+en una nueva ventana
+- Revisando vemos que puerto asignó al x:7600 
+- Ingresamos a http://localhost:32771/
+
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS                                                                                                NAMES
+922fc9ee95ac        ibmcom/ace          "runaceserver"      5 minutes ago       Up 5 minutes        0.0.0.0:32771->7600/tcp, 0.0.0.0:32770->7800/tcp, 0.0.0.0:32769->7843/tcp, 0.0.0.0:32768->9483/tcp   unruffled_visvesvaraya
