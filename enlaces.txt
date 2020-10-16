@@ -2,7 +2,7 @@
 Hands on Labs IBM Cloud Pak for Integration
 - https://www.ibm.com/demos/collection/Cloud-Pak-for-Integration/?lc=en
 
-IBM Tutoriales y Hans Labs de OpenShift
+IBM Tutoriales y Hands on Labs de OpenShift
 - https://www.ibm.com/pe-es/cloud/openshift/get-started
 
 Laboratorios de OpenShift en IBM Cloud 
