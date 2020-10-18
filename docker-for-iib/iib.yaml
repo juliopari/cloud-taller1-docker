@@ -1,0 +1,22 @@
+#imagen
+https://hub.docker.com/r/ibmcom/iib
+
+#descargar la imagen
+docker pull ibmcom/iib
+
+#ejecutar la imagen
+docker run --name myNode -e LICENSE=accept -e NODENAME=MYNODE -e SERVERNAME=MYSERVER -P ibmcom/iib
+
+#docs
+The last important point of configuration when running a container from this image, is port mapping. 
+The image exposes ports 4414 and 7800 by default, for Integration Node administration and Integration 
+Server HTTP traffic respectively. This means you can run with the -P flag to auto map these ports to 
+ports on your host. Alternatively you can use -p to expose and map any ports of your choice.
+
+#docker ps
+$ docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS                                              NAMES
+3dfe51666d1f        ibmcom/iib          "iib_manage.sh"     31 seconds ago      Up 28 seconds       0.0.0.0:32773->4414/tcp, 0.0.0.0:32772->7800/tcp   myNode
+
+#consola web
+http://localhost:32773/
